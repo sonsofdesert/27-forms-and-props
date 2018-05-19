@@ -1,11 +1,11 @@
 import React from 'react';
 
-class SearchResultList extends React.Component {
+class SearchList extends React.Component {
     constructor(props){
         super(props);
     }
     
-    results(){
+    s(){
         return this.props.topics.map((results, i) => {
             return <a href={results.data.url} target="_blank"><li key={i}>{results.data.title}</li></a>
         })
@@ -22,4 +22,4 @@ class SearchResultList extends React.Component {
     }
 }
 
-module.exports = SearchResultList;
+module.exports = SearchList;
