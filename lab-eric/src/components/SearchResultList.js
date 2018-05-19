@@ -10,6 +10,7 @@ class SearchResultList extends React.Component {
             return <a href={results.data.url} target="_blank"><li key={i}>{results.data.title}</li></a>
         })
     }
+    
 
     render() {
         return (
